@@ -1,14 +1,17 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
             font-family: "Poppins", sans-serif;
         }
-        html {
-            scroll-behavior: smooth;
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
         }
         header {
             background-color: #4a0404;
-            color: white;
+            color: #ffffff;
             padding: 15px 5%;
             display: flex;
             justify-content: space-between;
@@ -16,12 +19,13 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
         .logo {
             font-size: 24px;
             font-weight: 700;
             letter-spacing: 1px;
+            color: #ffffff;
         }
         .search {
             flex-grow: 1;
@@ -30,59 +34,87 @@
             margin: 0 20px;
         }
         .search2 {
-            padding: 8px 15px;
-            border-radius: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
             border: none;
-            width: 60%;
-            max-width: 400px;
             outline: none;
+            width: 100%;
+            max-width: 450px;
+            font-size: 14px;
+            transition: 0.3s;
         }
+        /* nav */
         nav ul {
             display: flex;
             list-style: none;
             gap: 30px;
         }
-
         nav ul li a {
-            color: white;
-            font-size: 12px;
-            font-weight: 600;
+            color: #ffffffe6;
+            font-size: 13px;
+            font-weight: 500;
             text-transform: uppercase;
-            transition: opacity 0.3s;
+            text-decoration: none;
+            transition: color 0.3s;
+            position: relative;
         }
-
-        nav ul li a:hover {
-            opacity: 0.8;
-            text-decoration: underline;
+        nav ul li a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #f7a600;
+            transition: width 0.3s;
         }
-       
-        /* ---------- foodd --------- */
-        #food {
-            background: #ffffffa6;
+        nav ul li a:hover::after {
             width: 100%;
-            padding: 70px 0;
         }
-        .txt1 {
-            text-align: left;
-            padding-left: 50px;
-            padding-bottom: 50px;
+        nav ul li a:hover {
+            color: #f7a600;
+        }
+        /*all*/
+        #hero {
+            width: 100%;
+            padding: 0;
         }
         .txt1 h1 {
-            font-size: 50px;
+            font-size: 42px;
+            color: #470404;
+            margin-bottom: 5px;
         }
         .txt1 p {
-            font-size: 20px;
+            font-size: 18px;
+            color: #666667;
+            max-height: 100%;
+            line-height: 1.5;
         }
-        .text2 {
-            text-align: left;
-            padding-left: 50px;
-            padding-bottom: 40px;
-            padding-top: 50px;
+        #food, #hobby, #religious1, #international {
+            width: 100%;
+            padding: 60px 5%;
         }
-        .text2 h3 {
-            font-size: 35px;
+        .txt1, .text2, .text3, .text4, .text5 {
+            text-align: center; 
+            margin-bottom: 40px;
         }
-        .foodlist {
+        
+        h3, .text3 p strong, .text4 p strong, .text5 p strong {
+            font-size: 32px;
+            color: #222222;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        h3::after, .text3 p strong::after, .text4 p strong::after, .text5 p strong::after {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background-color: #f7a600;
+            bottom: 0;
+            left: 25%;
+            border-radius: 2px;
+        }
+        .foodlist, .hobbylist, .religious, .international1 {
             width: 100%;
             margin: auto;
             display: flex;
@@ -92,190 +124,51 @@
             align-items: center;
             gap: 50px;
         }
-        .fooditem {
-            flex-basis: 25%;
-            text-align: justify;
-            border-radius: 7px;
-            margin-bottom: 0;
-            color: #444343;
-        }
-        .fooditem img {
-            width: 310px;
-            border-radius: 7px;
-            height: 310px;
-        }
-        .fooddescription hr {
-            background: #535050;
-            height: 2px;
-            border: 0;
-            margin-bottom: 15px auto;
-            width: 100%;
-        }
-        .fooddescription h2 {
-            font-size: 20px;
-            padding-bottom: 7px;
-            padding-top: 20px;
-        }
-        .fooddescription p {
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        /* ---------- hobbbbyyy --------- */
-        #hobby {
+        .fooditem, .hobbyitem, .religiousitem, .internationalitem {
             background: #ffffff;
-            width: 100%;
-            padding: 70px 0;
-        }
-        .text3 {
-            text-align: left;
-            padding-left: 50px;
-            padding-bottom: 50px;
-            padding-top: 50px;
-        }
-        .text3 p {
-            font-size: 35px;
-        }
-        .hobbylist {
-            width: 100%;
-            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px 5px #0000000d;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
-            flex-wrap: wrap;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
+            flex-direction: column;
         }
-        .hobbyitem {
-            flex-basis: 25%;
-            border-radius: 7px;
-            margin-bottom: 0;
-            color: #444343;
+        .fooditem:hover, .hobbyitem:hover, .religiousitem:hover, .internationalitem:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px #00000026;
         }
-        .hobbyitem img {
-            width: 310px;
-            border-radius: 7px;
-            height: 310px;
-        }
-        .hobbydescription hr {
-            background: #535050;
-            height: 2px;
-            border: 0;
-            margin-bottom: 15px auto;
+        .fooditem img, .hobbyitem img, .religiousitem img, .internationalitem img {
             width: 100%;
+            height: 350px;
+            object-fit: fill;
+            transition: transform 0.5s;
+            border-bottom: 1px solid #eeeeee;
         }
-        .hobbydescription h2 {
-            font-size: 20px;
-            padding-bottom: 7px;
-            padding-top: 20px;
+        .fooditem:hover img, .hobbyitem:hover img, .religiousitem:hover img, .internationalitem:hover img {
+            transform: scale(1.05);
         }
-        .hobbydescription p {
+        .fooddescription, .hobbydescription, .religiousdescription, .internationaldescription {
+            padding: 20px;
+            text-align: center;
+        }
+        .fooddescription h2, .hobbydescription h2, .religiousdescription h2, .internationaldescription h2 {
+            font-size: 18px;
+            color: #4a0404;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .fooddescription hr, .hobbydescription hr, .religiousdescription hr, .internationaldescription hr {
+            background: #f7a5005e;
+            height: 1px;
+            border: 0;
+            width: 100%;
+            margin: 0 auto 15px auto;
+            border-radius: 2px;
+        }
+        .fooddescription p, .hobbydescription p, .religiousdescription p, .internationaldescription p {
             font-size: 14px;
+            color: #666667;
             line-height: 1.5;
-        }
-    /* -------- religious --------- */
-    #religious1 {
-        background: #ffffffa6;
-        width: 100%;
-        padding: 70px 0;
-        }
-        .text4 {
-        text-align: left;
-        padding-left: 50px;
-        padding-bottom: 50px;
-        padding-top: 50px;
-        }
-        .text4 p {
-        font-size: 35px;
-        }
-        .religious {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        }
-        .religiousitem {
-        flex-basis: 25%;
-        border-radius: 7px;
-        margin-bottom: 0;
-        color: #444343;
-        }
-        .religiousitem img {
-        width: 310px;
-        border-radius: 7px;
-        height: 310px;
-        }
-        .religiousdescription hr {
-        background: #535050;
-        height: 2px;
-        border: 0;
-        margin-bottom: 15px auto;
-        width: 100%;
-        }
-        .religiousdescription h2 {
-        font-size: 20px;
-        padding-bottom: 7px;
-        padding-top: 20px;
-        }
-        .religiousdescription p {
-        font-size: 14px;
-        line-height: 1.5;
-        }
-    
-    /* --------- International --------- */
-    #international {
-        background: #ffffff;
-        width: 100%;
-        padding: 70px 0;
-        }
-        .text5 {
-        text-align: left;
-        padding-left: 50px;
-        padding-bottom: 50px;
-        padding-top: 50px;
-        }
-        .text5 p {
-        font-size: 35px;
-        }
-        .international1 {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        }
-        .internationalitem {
-        flex-basis: 25%;
-        border-radius: 7px;
-        margin-bottom: 0;
-        color: #444343;
-        }
-        .internationalitem img {
-        width: 310px;
-        border-radius: 7px;
-        height: 310px;
-        }
-        .internationaldescription hr {
-        background: #535050;
-        height: 2px;
-        border: 0;
-        margin-bottom: 15px auto;
-        width: 100%;
-        }
-        .internationaldescription h2 {
-        font-size: 20px;
-        padding-bottom: 7px;
-        padding-top: 20px;
-        }
-        .internationaldescription p {
-        font-size: 14px;
-        line-height: 1.5;
         }
 
     /* ---------- footer --------- */
