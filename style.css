@@ -74,13 +74,14 @@
         }
         /*all*/
         #hero {
-            background: url(LPU\BG/lpu_cover.jpg);
+            background: linear-gradient(#fdfdfd40,rgba(71, 4, 4, 0.551)),url("LPUBG/lpu_cover.jpg");
+            height: 90.3vh;
             width: 100%;
             padding: 0;
         }
         .txt1 h1 {
             font-size: 42px;
-            color: #470404;
+            color: rgb(71, 4, 4);
             margin-bottom: 5px;
         }
         .txt1 p {
@@ -90,6 +91,10 @@
             line-height: 1.5;
         }
         #food, #hobby, #religious1, #international {
+            background-color: #f3f4f6;
+            background-image: radial-gradient(#d1d1d1 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            color: #333;
             width: 100%;
             padding: 60px 5%;
         }
@@ -136,7 +141,6 @@
         }
         .fooditem:hover, .hobbyitem:hover, .religiousitem:hover, .internationalitem:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px #00000026;
         }
         .fooditem img, .hobbyitem img, .religiousitem img, .internationalitem img {
             width: 100%;
