@@ -2,24 +2,17 @@
 <html>
 <head>
     <link rel="stylesheet" href="third1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYCOrg - College of Information Technology and Computer Science (CCS)</title>
-    <link rel="stylesheet" href="fourth1.css">
-    <style>
-
-    </style>
+    <title>LYCEOrg - College of Information Technology and Computer Science (CCS)</title>
 </head>
 <body>
 
     <div class="header">
-        <div class="logo">LYCOrg</div>
+        <div class="logo">LYCEOrg</div>
         
-        <div class="search">
-            <input type="text" class="search2" placeholder="Search events, orgs...">
-        </div>
-
         <div class="nav">
-            <a href="#">HOME</a>
+            <a href="WEBPAGE 1.html">HOME</a>
             <a href="#">EVENTS</a>
             <a href="#">ORGANIZATIONS</a>
             <a href="#">CONTACTS</a>
@@ -30,12 +23,15 @@
 
         <section class="intro1">
             <h1>College of Information Technology and Computer Science (CCS)</h1>
-            <p style="text-align: justify;">
-                 The College of Computer Studies (CCS) is dedicated to developing innovative, competent, and industry-ready professionals in the fields of information technology, computer science, and digital innovation. The college provides a strong foundation in programming, systems analysis, software development, and emerging technologies through a balance of theoretical instruction and practical application. With a focus on creativity, problem-solving, and ethical computing, CCS prepares students to meet the demands of the rapidly evolving digital world.            </p>
+            <p class="def">
+                 The College of Computer Studies (CCS) is dedicated to developing innovative, competent, and industry-ready professionals in the fields of information technology, computer science, and digital innovation. The college provides a strong foundation in programming, systems analysis, software development, and emerging technologies through a balance of theoretical instruction and practical application. With a focus on creativity, problem-solving, and ethical computing, CCS prepares students to meet the demands of the rapidly evolving digital world.
+            </p>
             <br>
 
             <div class="intro2">
-                <img src="CCS PHOTOS/CCS_LOGO.png" alt="CBA Logo" class="collogo">
+                <div class="logo">
+                    <img src="CCS PHOTO/CCS_LOGO.png" alt="CCS Logo" class="collogo">
+                </div>
                 
                 <div class="text1">
                     <p>
@@ -53,37 +49,43 @@
             </div>
         </section>
 
-        <section class="images">
-            <a href="#img1">
-            <img src="⁦CCS PHOTOS/CCS1.jpg⁩" class="imgs" alt="pic 1">
-            </a>
-            <a href="#img2">
-            <img src="⁦⁦CCS PHOTOS/CCS2.jpg" class="imgs" alt="pic 2">
-            </a>
-            <a href="#img3">
-            <img src="CCS PHOTOS/CCS3.jpg⁩" class="imgs" alt="pic 3">
-            </a>
-            <a href="#img4">
-            <img src="⁦⁦CCS PHOTOS/CCS4.jpg" class="imgs" alt="pic 4">
-            </a>
+        <section class="slideshow">
+            <div class="slider">
+                <div class="track" id="sliderTrack">
+                    <div class="slide">
+                        <img src="CCS PHOTO/ccs1.jpg" alt="pic 1">
+                    </div>
+                    <div class="slide">
+                        <img src="CCS PHOTO/ccs2.jpg" alt="pic 2">
+                    </div>
+                    <div class="slide">
+                        <img src="CCS PHOTO/ccs3.jpg" alt="pic 3">
+                    </div>
+                    <div class="slide">
+                        <img src="CCS PHOTO/ccs4.jpg" alt="pic 4">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="orgs">
             <h2>College of Information Technology and Computer Science (CCS)</h2>
 
-            <div class="orgdes" style="text-align: justify;">
-                <img src="⁦CCS PHOTOS/CCS_LOGO.png" class="orgimg" alt="Org Image">
-                <p class="orgtext">
-                     <strong>Student Association for Technological Advancement (SATA)</strong> 
-                </p>
+            <a href="CCS_SATA_SUBWEBPAGE45.html">
+                <div class="orgdes">
+                    <img src="CCS PHOTO/CCSSUB1.jpg" class="orgimg" alt="SATA">
+                    <div class="org-content">
+                        <h3>Student Association for Technological Advancement (SATA)</h3>
+                        <p>A Department of Computer Studies’ student organization that aids students in promoting quality education in the field of Information Technology and Computer Science.</p>
+                    </div>
                 </div>
+            </a>
         </section>
 
         <div class="footer">
             <div class="col">
-                <strong>LYCOrg</strong>
-                <p>123 University Ave</p>
-                <p>City, Country</p>
+                <strong>LYCEOrg</strong>
+                <p>Lyceum of the Philippines Cavite</p>
             </div>
             <div class="col">
                 <p>Home</p>
@@ -99,5 +101,6 @@
 
     </div>
 
+    <script src="jsscripts.js"></script>
 </body>
 </html>

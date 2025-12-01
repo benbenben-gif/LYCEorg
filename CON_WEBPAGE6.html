@@ -2,24 +2,17 @@
 <html>
 <head>
     <link rel="stylesheet" href="third1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYCOrg - College of Nursing (CON)</title>
-    <link rel="stylesheet" href="fourth1.css">
-    <style>
-
-    </style>
+    <title>LYCEOrg - College of Nursing (CON)</title>
 </head>
 <body>
 
     <div class="header">
-        <div class="logo">LYCOrg</div>
+        <div class="logo">LYCEOrg</div>
         
-        <div class="search">
-            <input type="text" class="search2" placeholder="Search events, orgs...">
-        </div>
-
         <div class="nav">
-            <a href="#">HOME</a>
+            <a href="WEBPAGE 1.html">HOME</a>
             <a href="#">EVENTS</a>
             <a href="#">ORGANIZATIONS</a>
             <a href="#">CONTACTS</a>
@@ -30,13 +23,15 @@
 
         <section class="intro1">
             <h1>College of Nursing (CON)</h1>
-            <p style="text-align: justify;">
-                 The College of Nursing is dedicated to shaping compassionate, competent, and service-oriented healthcare professionals who uphold the highest standards of nursing practice. It provides a strong foundation in medical science, clinical skills, and ethical care through a balance of classroom instruction and hands-on experience in hospitals and community settings. Guided by a commitment to excellence, integrity, and social responsibility, the college prepares students to respond effectively to the evolving needs of the healthcare industry.college fosters critical thinking, problem-solving, and sustainable development.
+            <p class="def">
+                 The College of Nursing is dedicated to shaping compassionate, competent, and service-oriented healthcare professionals who uphold the highest standards of nursing practice. It provides a strong foundation in medical science, clinical skills, and ethical care through a balance of classroom instruction and hands-on experience in hospitals and community settings. Guided by a commitment to excellence, integrity, and social responsibility, the college prepares students to respond effectively to the evolving needs of the healthcare industry.
             </p>
             <br>
 
             <div class="intro2">
-                <img src="CON PHOTOS/CON_LOGO.png⁩" alt="CBA Logo" class="collogo">
+                <div class="logo">
+                    <img src="CON PHOTOS/CON_LOGO.png" alt="CON Logo" class="collogo">
+                </div>
                 
                 <div class="text1">
                     <p>
@@ -54,37 +49,28 @@
             </div>
         </section>
 
-        <section class="images">
-            <a href="#img1">
-            <img src="CON PHOTOS/CON1.png⁩" class="imgs" alt="pic 1">
-            </a>
-            <a href="#img2">
-            <img src="CON PHOTOS/CON2.png" alt="pic 2">
-            </a>
-            <a href="#img3">
-            <img src="CON PHOTOS/CON3.png" class="imgs" alt="pic 3">
-            </a>
-            <a href="#img4">
-            <img src="⁦CON PHOTOS/CON4.png⁩" class="imgs" alt="pic 4">
-            </a>
-        </section>
-
-        <section class="orgs">
-            <h2>College of Nursing (CON)</h2>
-
-            <div class="orgdes">
-                <img src="WALA PA SUB ORGS⁩" class="orgimg" alt="Org Image">
-                <p class="orgtext" style="text-align: justify;">
-                    <strong>Awakened Circle of Elite Students (ACES):</strong>
-                </p>
+        <section class="slideshow">
+            <div class="slider">
+                <div class="track" id="sliderTrack">
+                    <div class="slide">
+                        <img src="CON PHOTOS/CON1.jpg" alt="pic 1">
+                    </div>
+                    <div class="slide">
+                        <img src="CON PHOTOS/CON2.jpg" alt="pic 2">
+                    </div>
+                    <div class="slide">
+                        <img src="CON PHOTOS/CON3.jpg" alt="pic 3">
+                    </div>
+                    <div class="slide">
+                        <img src="CON PHOTOS/CON4.jpg" alt="pic 4">
+                    </div>
+                </div>
             </div>
         </section>
-
         <div class="footer">
             <div class="col">
-                <strong>LYCOrg</strong>
-                <p>123 University Ave</p>
-                <p>City, Country</p>
+                <strong>LYCEOrg</strong>
+                <p>Lyceum of the Philippines Cavite</p>
             </div>
             <div class="col">
                 <p>Home</p>
@@ -99,6 +85,8 @@
         </div>
 
     </div>
+
+    <script src="jsscripts.js"></script>
 
 </body>
 </html>
