@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="LOGINS.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-image">
+      <img src="https://media.licdn.com/dms/image/v2/C511BAQGCDbQ-oGP2dg/company-background_10000/company-background_10000/0/1583944446063/lpu_cover?e=2147483647&v=beta&t=nC4GACEpii_488OlQClrtgmh4SgIYMnNeWJm0_kcGSs" alt="LPU Background">
+    </div>
+    <div class="overlay">
+      <nav class="navbar">
+        <h1 class="logo"><span>LYCE</span>Org</h1>
+      </nav>
+
+      <div class="login-container">
+        <h2>Login</h2>
+
+        <form onsubmit="return false;">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="Password" required>
+
+          
+          <a href="WEBPAGE 1.html" class="static-login-btn">Login</a>
+        </form>
+
+        <p class="signup-link">
+          Don’t have an account? <a href="#" id="openSignup">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="signup-modal" id="signupModal">
+    <div class="signup-box">
+      <h2>Create Account</h2>
+      <form action="#" method="POST">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Re-type Password" required>
+        <input type="submit" value="Sign Up">
+      </form>
+      <button class="close-btn" id="closeSignup">Close</button>
+    </div>
+  </div>
+
+<section>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>LYCEUM OF THE PHILIPPINES<br>UNIVERSITY - CAVITE</h2>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    <p class="copyright">Copyright © Lyceum of the Philippines University - Cavite 2025. All Rights Reserved.</p>
+  </footer>
+</section>
+
+<script src="jsscripts2.js"></script>
+
+</body>
+</html>

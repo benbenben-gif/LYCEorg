@@ -10,3 +10,5 @@
             track.style.transform = `translateX(-${index * 100}%)`;
         }
         setInterval(nextSlide, 3000);
+
+        
