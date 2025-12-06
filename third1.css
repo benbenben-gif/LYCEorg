@@ -22,7 +22,14 @@ body {
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+.lyceorglogo {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px;

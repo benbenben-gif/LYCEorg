@@ -5,8 +5,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
+.lyceorglogo {
+        width: 100px;
+        height: auto;
+    }
 .hero {
   position: relative;
   width: 100%;
@@ -45,6 +47,7 @@ body {
 }
 
 .logo {
+  align-items: center;
   font-size: 6rem;
   color: wheat;
   letter-spacing: 4px;
