@@ -120,6 +120,8 @@
             left: 25%;
             border-radius: 2px;
         }
+
+
         .foodlist, .hobbylist, .religious, .international1 {
             width: 100%;
             margin: auto;
@@ -143,14 +145,18 @@
         .fooditem img, .hobbyitem img, .religiousitem img, .internationalitem img {
             width: 100%;
             height: 350px;
-            object-fit: fill;
+            object-fit: scale-down;
             transition: transform 0.5s;
         }
         .fooditem:hover img, .hobbyitem:hover img, .religiousitem:hover img, .internationalitem:hover img {
             transform: scale(1.05);
         }
+
+
         .fooddescription, .hobbydescription, .religiousdescription, .internationaldescription {
             padding: 20px;
+            height: 150px;
+            width: 380px;
             text-align: center;
         }
         .fooddescription h2, .hobbydescription h2, .religiousdescription h2, .internationaldescription h2 {
