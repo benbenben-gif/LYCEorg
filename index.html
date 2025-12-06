@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Site</title>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 400px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
-            line-height: 1.6;
-            color: #666;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <link rel="stylesheet" href="LOGINS.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-    <div class="container">
-        <h1>Hello, I'm [Your Name]!</h1>
-        <p>
-            Welcome to my personal website hosted on GitHub. 
-            I am learning how to code and build cool things on the internet.
-        </p>
-        <a href="https://github.com" class="button">Visit my GitHub Profile</a>
+  <header class="hero">
+    <div class="hero-image">
+      <img src="https://media.licdn.com/dms/image/v2/C511BAQGCDbQ-oGP2dg/company-background_10000/company-background_10000/0/1583944446063/lpu_cover?e=2147483647&v=beta&t=nC4GACEpii_488OlQClrtgmh4SgIYMnNeWJm0_kcGSs" alt="LPU Background">
     </div>
+    <div class="overlay">
+      <nav class="navbar">
+        <h1 class="logo"><img class="lyceorglogo" src="LYCEOrg logo.png"><span>LYCE</span>Org</h1>
+      </nav>
+
+      <div class="login-container">
+        <h2>Login</h2>
+
+        <form onsubmit="return false;">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="Password" required>
+
+          
+          <a href="WEBPAGE 1.html" class="static-login-btn">Login</a>
+        </form>
+
+        <p class="signup-link">
+          Don’t have an account? <a href="#" id="openSignup">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </header>
+  <div class="signup-modal" id="signupModal">
+    <div class="signup-box">
+      <h2>Create Account</h2>
+      <form action="#" method="POST">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Re-type Password" required>
+        <input type="submit" value="Sign Up">
+      </form>
+      <button class="close-btn" id="closeSignup">Close</button>
+    </div>
+  </div>
+
+<section>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>LYCEUM OF THE PHILIPPINES<br>UNIVERSITY - CAVITE</h2>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    <p class="copyright">Copyright © Lyceum of the Philippines University - Cavite 2025. All Rights Reserved.</p>
+  </footer>
+</section>
+
+<script src="jsscripts2.js"></script>
 
 </body>
 </html>
