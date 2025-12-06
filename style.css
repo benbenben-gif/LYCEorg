@@ -139,8 +139,8 @@
             box-shadow: 0 5px 15px 5px #0000000d;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .fooditem:hover, .hobbyitem:hover, .religiousitem:hover, .internationalitem:hover {
-            transform: translateY(-5px);
+        .fooditem a, .hobbyitem a, .religiousitem a, .internationalitem a {
+            text-decoration: none;
         }
         .fooditem img, .hobbyitem img, .religiousitem img, .internationalitem img {
             width: 100%;

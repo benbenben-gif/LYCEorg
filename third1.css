@@ -185,7 +185,7 @@ h2::after {
 .footer {
     background-color: #222222cf;
     color: #aaa;
-    padding: 100%;
+    padding: 50px 20px;
     display: flex;
     justify-content: space-around;
     font-size: 13px;
